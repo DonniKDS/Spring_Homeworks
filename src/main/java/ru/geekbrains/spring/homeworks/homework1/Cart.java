@@ -1,5 +1,6 @@
 package ru.geekbrains.spring.homeworks.homework1;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Scope("prototype")
 public class Cart {
 
     private List<Product> cart;
